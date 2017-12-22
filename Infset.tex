@@ -1,0 +1,53 @@
+%Notes on Infinite Sets from How to Prove It by Daniel J. Velleman
+\documentclass{article}
+\usepackage{amsmath} 
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{indentfirst}
+\begin{document}
+\setlength\parindent{24pt}
+\begin{center}
+\begin{huge}
+Notes on Infinite Sets
+\end{huge}
+\\from Velleman's How to Prove It: A Structured Approach
+\newline by Ibraheem Khan
+\end{center}
+
+\section{Equinumerous Sets}
+
+\par Suppose A and B are sets. We'll say that A is equinumerous with B if there is a function f: A $\to$ B that is one-to-one and onto, that is, it is a bijection. Let A $\sim$ B denote that A is equinumerous to B. A set A is finite if there exists some n $\in$ $\mathbb{N}$ such that $\{$i $\in \mathbb{Z}^{+}$ $|$ i $\leq$ n$\}$ $\sim$ A. Essentially, if there is some sequence of or some selection of positive integers that are less than n and we collect these numbers into a set and also if this set is equinumerous to our set A, then set A is finite. Otherwise, A is an infinite set. Its cardinality, however, is not to be conflated with this notion of infinity. Finite cardinalities simply refers to the number i in finite sets as it is merely the number of elements in a set. However, in infinite sets cardinalities must be found via investigation of such bijections. Further, it is known that $\sim$ is an equivalence relation as it is reflexive, symmetric, and transitive. Refer to the notes done in class from Book of Proof for other trivialities, (such as finding particular one to one correspondences). 
+\\
+\par We now expand our notion of countable sets as being denumerable sets- that is sets A $\sim$ $\mathbb{Z}^{+}$ or those that are finite. Uncountable sets will be defined as those that are not countable. Uncountable sets are not necessarily sets whose cardinalities are equivalent to $\mathbb{R}$. 
+\\
+\par Here are some interesting equivalent statements:
+
+\begin{enumerate}
+\item A is countable.
+\item Either A = $\varnothing$ or there is a function f: $\mathbb{Z}^{+} \to$ A that is surjective.
+\item There is a function f: A $\to \mathbb{Z}^{+}$ that is bijective.
+\end{enumerate}
+\textbf{Theorem 1}
+\textit{Statements 1, 2, and 3 are logically equivalent}
+\begin{flushleft}
+1 $\implies$ 2
+\end{flushleft}
+\par A is a countable set. Thus, either A is denumerable or finite. Suppose A is denumerable. Then, by definition, there is a bijection f: $\mathbb{Z}^{+} \to$ A. Now, suppose A is finite. Thus, its cardinality is either $\varnothing$ or some number n as defined above. If $|$A$|$ = $\varnothing$ then clearly the first conditional in the OR proposition is true. If it is not, then $|$A$|$ = n. We want to prove that there exists some surjective function from the positive integers to A given that $|$A$|$ = n. Intuitively, we want to map all elements of the positive integers to all elements of A. This can be done by constructing the following set $\mathcal{G}$: $\{$i $\in \mathbb{Z}^{+}$ $|$ i $\leq$ n$\}$. Now, let $\mathcal{G} \to$ A be a bijection, g, given n is the number of elements of A. To clarify this construction see the above definition of finite. Let a $\in$ A. Now, we define $f$: $\mathbb{Z}^{+} \to$ A :
+\[ f(i) =
+	\begin{cases} 
+      g(i) & \text{if } i \leq n \\
+      a_{0} & \text{if } i > n \\
+   \end{cases}
+\]
+\par Clearly, this function is surjective as all A is mapped. The function $g$ simply assigns positive integers to our set. For example, one such assignment, or mapping, would be $\{$1,2,3,4,5$\}$ to a set A=$\{$Apple, 5, Photon, $\prod_{i=1}^{\infty} \zeta_{i}$, Reader$\}$. Clearly, the set A is a rather exotic set but $\mathcal{G}$ simplifies the set down to ordered, positive integers via the function $g^{-1}$. We know the inverse exists as we know g is a bijection.
+\\
+\\
+\begin{flushleft}
+2 $\implies$ 3
+\end{flushleft}
+\par If A is the null set, then the empty set itself is the bijection from A to $\mathbb{Z}^{+}$. 
+
+
+
+\end{document}
+
