@@ -88,6 +88,10 @@
   transform: rotateX(270deg) translateZ(100px) translateY(100px);
 }
 
+.wrap:hover .right {
+  transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+}
+
 .cube > div {
   transition: transform 0.2s ease-in;
 }
