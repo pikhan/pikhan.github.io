@@ -6,6 +6,25 @@
   perspective: 1000px;
   perspective-origin: 50% 50%;
 }
+.Pyramid {
+  margin: auto;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+
+.Pyramid > div {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.9;
+  background-color: #08ad50;
+  border: solid 1px #00e263;
+  color: #2059b5;
+}
 
 h1 {
 	font-family: "EB Garamond";
