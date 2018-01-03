@@ -49,6 +49,20 @@
   transform-origin: bottom center;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.Pyramid {
+  animation: rotate 20s infinite linear;
+}
+
 h1 {
 	font-family: "EB Garamond";
 	font-size: 24px;
