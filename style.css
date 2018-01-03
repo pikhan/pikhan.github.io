@@ -83,6 +83,10 @@
   transform: rotateX(270deg) translateZ(100px) translateY(100px);
 }
 
+.Pyramid > div {
+  transition: transform 0.2s ease-in;
+}
+
 h1 {
 	font-family: "EB Garamond";
 	font-size: 24px;
