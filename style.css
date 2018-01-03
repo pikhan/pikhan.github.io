@@ -32,10 +32,10 @@
         height: 100%;
         width: 100%;
         opacity: 0.9;
-        background-color: #000;
-        border: solid 1px #eee;
-        color: #fff;
-        font: 10px arial;
+        background-color: #0fc15f;
+        border: solid 1px #00ff72;
+        color: #10acb7;
+        font: 18px EB Garamond;
         transition: transform 0.2s ease-in;
     }
 
