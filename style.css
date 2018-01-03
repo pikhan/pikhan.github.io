@@ -110,6 +110,16 @@
 .wrap:hover .bottom {
     transform: rotateX(270deg) translateZ(100px) translateY(100px);
 }
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
 h1 {
 	font-family: "EB Garamond";
 	font-size: 24px;
