@@ -6,7 +6,7 @@
   perspective: 1000px;
   perspective-origin: 50% 50%;
 }
-.Pyramid {
+.cube {
   margin: auto;
   position: relative;
   height: 200px;
@@ -14,7 +14,7 @@
   transform-style: preserve-3d;
 }
 
-.Pyramid > div {
+.cube > div {
   position: absolute;
   box-sizing: border-box;
   padding: 10px;
@@ -32,6 +32,11 @@
 
 .back {
   transform: translateZ(-100px) rotateY(180deg);
+}
+
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
 }
 
 .left {
@@ -59,7 +64,7 @@
   }
 }
 
-.Pyramid {
+.cube {
   animation: rotate 20s infinite linear;
 }
 
@@ -83,7 +88,7 @@
   transform: rotateX(270deg) translateZ(100px) translateY(100px);
 }
 
-.Pyramid > div {
+.cube > div {
   transition: transform 0.2s ease-in;
 }
 
