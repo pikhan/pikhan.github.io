@@ -41,9 +41,6 @@
 
 .front {
     transform: translateZ(100px);
-    position: relative;
-top: 50%;
-transform: translateY(-50%); 
 }
 
 .back {
@@ -109,7 +106,7 @@ transform: translateY(-50%);
 }
 
 a.button {
-  position: relative;
+  position: middle;
   top: 50%;
   transform: translateY(-50%);
 }
