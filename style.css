@@ -105,11 +105,13 @@
     transform: rotateX(270deg) translateZ(100px) translateY(100px);
 }
 
-a.button {
-  position: middle;
-  top: 50%;
-  transform: translateY(-50%);
-}
+#button1 {display:block;text-align:center}
+#button2 {display:block;text-align:center}
+#button3 {display:block;text-align:center}
+#button4 {display:block;text-align:center}
+#button5 {display:block;text-align:center}
+#button6 {display:block;text-align:center}
+
 
 h1 {
 	font-family: "EB Garamond";
