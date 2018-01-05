@@ -16,14 +16,14 @@ opacity: 0;
 }
 #intro{
   text-align: center;
-  color: #028e2f;
+  color: #fff;
   font-size: 32px;
   line-height: 32px;
   text-shadow:
     -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-    1px 1px 0 #fff;  
+    1px 1px 0 #fff;
   opacity: 0;
     -moz-animation: fadein 3s ease-in 5s forwards; /* Firefox */
     -webkit-animation: fadein 3s ease-in 5s forwards; /* Safari and Chrome */
