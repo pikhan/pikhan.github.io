@@ -17,8 +17,8 @@ opacity: 0;
 #intro{
   text-align: center;
   color: #fff;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 18px;
   opacity: 0;
     -moz-animation: fadein 3s ease-in 5s forwards; /* Firefox */
     -webkit-animation: fadein 3s ease-in 5s forwards; /* Safari and Chrome */
