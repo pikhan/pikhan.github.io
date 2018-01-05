@@ -36,11 +36,11 @@
         box-sizing: border-box;
         height: 100%;
         width: 100%;
-        opacity: 1;
-        background-color: #0fc15f;
-        border: solid 1px #00ff72;
+        opacity: 0.7;
+        background-color: #11c642;
+        border: solid 1px #00ff43;
         color: #10acb7;
-        font: 18px EB Garamond;
+        font: 24px EB Garamond;
         transition: transform 0.2s ease-in;
     }
 
