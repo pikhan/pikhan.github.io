@@ -9,10 +9,10 @@
 .profile{
 margin-top:-100%;
 opacity: 0;
-  -moz-animation: fadein 3s ease-in 3s forwards; /* Firefox */
-  -webkit-animation: fadein 3s ease-in 3s forwards; /* Safari and Chrome */
-  -o-animation: fadein 3s ease-in 3s forwards; /* Opera */
-  animation: fadein 3s ease-in 3s forwards;
+  -moz-animation: fadein 3s ease-in 1s forwards; /* Firefox */
+  -webkit-animation: fadein 3s ease-in 1s forwards; /* Safari and Chrome */
+  -o-animation: fadein 3s ease-in 1s forwards; /* Opera */
+  animation: fadein 3s ease-in 1s forwards;
 }
 #intro{
   text-align: center;
@@ -20,10 +20,10 @@ opacity: 0;
   font-size: 18px;
   line-height: 18px;
   opacity: 0;
-    -moz-animation: fadein 3s ease-in 5s forwards; /* Firefox */
-    -webkit-animation: fadein 3s ease-in 5s forwards; /* Safari and Chrome */
-    -o-animation: fadein 3s ease-in 5s forwards; /* Opera */
-    animation: fadein 3s ease-in 5s forwards;
+    -moz-animation: fadein 3s ease-in 3s forwards; /* Firefox */
+    -webkit-animation: fadein 3s ease-in 3s forwards; /* Safari and Chrome */
+    -o-animation: fadein 3s ease-in 3s forwards; /* Opera */
+    animation: fadein 3s ease-in 3s forwards;
 }
 
 @keyframes fadein {
@@ -64,10 +64,10 @@ opacity: 0;
     perspective: 1000px;
     perspective-origin: 50% 50%;
     opacity: 0;
-      -moz-animation: fadein 3s ease-in 7s forwards; /* Firefox */
-      -webkit-animation: fadein 3s ease-in 7s forwards; /* Safari and Chrome */
-      -o-animation: fadein 3s ease-in 7s forwards; /* Opera */
-      animation: fadein 3s ease-in 7s forwards;
+      -moz-animation: fadein 3s ease-in 5s forwards; /* Firefox */
+      -webkit-animation: fadein 3s ease-in 5s forwards; /* Safari and Chrome */
+      -o-animation: fadein 3s ease-in 5s forwards; /* Opera */
+      animation: fadein 3s ease-in 5s forwards;
 }
 
 @keyframes bganim {
