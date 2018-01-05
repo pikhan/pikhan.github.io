@@ -8,6 +8,7 @@
 }
 .profile{
 margin-top:-100%;
+animation-delay:5s;
 -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
@@ -16,7 +17,7 @@ margin-top:-100%;
 }
 #intro{
   text-align: center;
-  animation-delay: 2s;
+  animation-delay: 7s;
   color: #ffffff;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 2s; /* Firefox < 16 */
