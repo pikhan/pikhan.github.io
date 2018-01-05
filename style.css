@@ -8,6 +8,7 @@
 }
 .profile{
 margin-top:-100%;
+opacity: 0;
 animation-delay:5s;
 -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -17,6 +18,7 @@ animation-delay:5s;
 }
 #intro{
   text-align: center;
+  opacity: 0;
   animation-delay: 7s;
   color: #ffffff;
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
