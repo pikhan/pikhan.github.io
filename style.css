@@ -11,6 +11,7 @@
     margin-top: 150px;
     perspective: 1000px;
     perspective-origin: 50% 50%;
+    margin-left: -50%;
 }
 
 @keyframes bganim {
