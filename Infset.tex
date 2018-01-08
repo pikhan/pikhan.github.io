@@ -4,6 +4,9 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{indentfirst}
+\usepackage{graphicx}
+\graphicspath{ {c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/} }
+
 \begin{document}
 \setlength\parindent{24pt}
 \begin{center}
@@ -211,8 +214,14 @@ Thus the Cantor-Pairing function is invertible and therefore it is a bijection. 
 \bigcup_{n=1}^{\infty} S_{n}=\mathbb{N}
 \]
 \par Considering the union of these sets having infinitely many elements is equivalent to a countable set it would lead us to believe that these sets by themselves should also be countable. As such, this would provide us the much necessary intuition to proceed with the proof that the union of countably many countable sets is indeed countable. Note, that we have countably many infinite choices as well (we procured each ``choice" via a procedural list and as we shall see list if we can sequence objects then the set of those objects is countable. Further one may conceive of this as a choice-tree and labeling nodes on such a graph is a trivial task, this labeling is in effect forming a sequence). One final formality to consider in this intuition is the notion of these sets being disjoint.``After" the process all the sets produced will be disjoint so their intersections will be the null set. However, the property we aim to prove does not require that the countably many sets in question be disjoint.
+\par Consider some family of sets (note a family may be contained in a set but is not a set in and of itself), $\mathcal{F}$ that is countable and that every element is $\mathcal{F}$ is also countable. Then $\cup \mathcal{F}$ is also countable. Suppose $\mathcal{F} = \varnothing$ then clearly 
 \section{Appendix-Deriving the Cantor Pairing Function}
-Pairing functions are any bijective function that maps (computably so) $\mathbb{N} \times \mathbb{N}$ to $\mathbb{N}$. 
+\par Pairing functions are any bijective function that maps (computably so) $\mathbb{N} \times \mathbb{N}$ to $\mathbb{N}$. We will now proceed to derive this function from the familiar diagonal argument: 
+\begin{figure}[h]
+\includegraphics[width=8cm]{CantorPF}
+\centering
+\end{figure}
+\par Above is a visual of how the function should map each coordinate pair to a natural.
 
 \end{document}
 
