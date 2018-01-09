@@ -93,7 +93,7 @@ Thus, $z$ is an element of $F$ and since it is an element of $F$ it is an ordere
 \end{flushleft}
 \par We now show that if there is an injection from some set to the positive integers (or natural numbers) then the set is countable- that is, it is denumerable or it is finite. Now, since $I$ is one-to-one $\mathcal{D}$($I$) $\sim \mathcal{C}$($I$). Further, $\mathcal{D}$($I$) $= A$ and $\mathcal{C}$($I$) $\subseteq \mathbb{Z}^{+}$. Thus, since the set of positive integers is countable, a subset of it is countable, and so since the domain of our function has the same cardinality as this subset of the positive integers that is the codomain of our function it too must be countable. And so, our proof of the given theorem is complete.
 {$\blacksquare$}
-\section{Properties of Infinite Sets and the Cantor-Schr\"oder-Bernstein Theorem}
+\section{Properties of Infinite Sets and Cantor's Theorem}
 \par We will now prove that: $A \times B$ and $A \cup B$ are both countable if both $A$ and $B$ are countable. Obviously, if either $A$ or $B$ is uncountable then their Cartesian products and unions are also uncountable. Since $A$ and $B$ are both countable there exists functions $f$:$A \to \mathbb{Z}^{+}$ and $g$:$B \to \mathbb{Z}^{+}$. Now, clearly, if the sets are finite their product is finite but if they are denumerable there is more to be said, that is why we imply the denumerability of our sets as we can then assert that the functions $f$ and $g$ are one-to-one and onto. Thus, to prove that $A \times B$ is countable we simply show that $\mathbb{Z}^{+} \times \mathbb{Z}^{+}$ is denumerable as we can define a function $h$:$A \times B \to \mathbb{Z}^{+} \times \mathbb{Z}^{+}$. We know this function is one-to-one if defined as follows: 
 \[
 h(a,b)=(f(a),g(b))
@@ -214,14 +214,54 @@ Thus the Cantor-Pairing function is invertible and therefore it is a bijection. 
 \bigcup_{n=1}^{\infty} S_{n}=\mathbb{N}
 \]
 \par Considering the union of these sets having infinitely many elements is equivalent to a countable set it would lead us to believe that these sets by themselves should also be countable. As such, this would provide us the much necessary intuition to proceed with the proof that the union of countably many countable sets is indeed countable. Note, that we have countably many infinite choices as well (we procured each ``choice" via a procedural list and as we shall see list if we can sequence objects then the set of those objects is countable. Further one may conceive of this as a choice-tree and labeling nodes on such a graph is a trivial task, this labeling is in effect forming a sequence). One final formality to consider in this intuition is the notion of these sets being disjoint.``After" the process all the sets produced will be disjoint so their intersections will be the null set. However, the property we aim to prove does not require that the countably many sets in question be disjoint.
-\par Consider some family of sets (note a family may be contained in a set but is not a set in and of itself), $\mathcal{F}$ that is countable and that every element is $\mathcal{F}$ is also countable. Then $\cup \mathcal{F}$ is also countable. Suppose $\mathcal{F} = \varnothing$ then clearly 
+\par Consider some family of sets (note a family may be contained in a set but is not a set in and of itself), $\mathcal{F}$ that is countable and that every element is $\mathcal{F}$ is also countable. Then $\cup \mathcal{F}$ is also countable. Suppose $\mathcal{F} = \varnothing$ then clearly
+\section{The Cantor-Schr\"oder-Bernstein Theorem}
+Stuff will go here about that...
 \section{Appendix-Deriving the Cantor Pairing Function}
 \par Pairing functions are any bijective function that maps (computably so) $\mathbb{N} \times \mathbb{N}$ to $\mathbb{N}$. We will now proceed to derive this function from the familiar diagonal argument: 
 \begin{figure}[h]
-\includegraphics[width=8cm]{CantorPF}
+\includegraphics[width=4cm]{CantorPF}
 \centering
 \end{figure}
-\par Above is a visual of how the function should map each coordinate pair to a natural.
+\par Above is a visual of how the function should map each coordinate pair to a natural. It is important to note that this kind of diagonal progression is standard across set theory and even in some areas of computer science. For example, a similar trick is used to count the rationals (the "next" idiom does not work on the rationals as a way to count as there is no computable (in finite time) rational directly adjacent to some rational $n$): 
+\begin{figure}[h]
+\includegraphics[width=4cm]{CountingRationals}
+\centering
+\end{figure}
+\par Now all that is left is to translate the graphical interpretation of our function into algebra. Now one can easily confirm from the above image (which defines our function) that:
+\[
+\pi (x,y)+1=\pi (x-1,y+1)
+\]
+\par Then, we must find suitable boundary conditions for our function. Essentially, we want to use the above definition with some boundary conditions to find a polynomial in the real euclidean plane. Should the proof be done procedurally one would have first tested a first-order polynomial (however clearly this will not work) so we will first attempt to construct a second order polynomial that fits our criteria. 
+\par Now of course, we know that $\pi(0,0)=0$. This will be the initial step. Further, may consider the function along the x and y axes. Along them we have the following description:
+\[
+\pi (0,k)+1=\pi (k+1,0)
+\]
+We now consider a general 2-variate 2nd order polynomial:
+\[
+\pi (x,y)=ax^{2}+by^{2}+cxy+dx+ey+f
+\]
+From our initial step it is obvious that $f=0$. We will now apply our boundary conditions to find:
+\[
+bk^{2}+ek+1=a(k+1)^{2}+d(k+1)
+\]
+Now, remember that this $k$ applies to all naturals and is not a variable in this context. The statement is true for all naturals k. Thus, if we simply let $k=0$ we find $d=1-a$. Following some algebra we arrive at
+\[
+k^2(b-a)+k(e-a-1)=0
+\] 
+Thus, $b=a$ and $e=1+a$. Should we add this newly found information using our first definition we arrive at (by writing everything in terms of a and c):
+\[
+{\begin{aligned}\pi (x,y)+1&=a(x^{2}+y^{2})+cxy+(1-a)x+(1+a)y+1\\&=a((x-1)^{2}+(y+1)^{2})+c(x-1)(y+1)+(1-a)(x-1)+(1+a)(y+1)\end{aligned}}
+\]
+Following much algebra we find
+\[
+(2a-c)(x-y)=4a-2
+\]
+\par We know that at $(0,0)$ there is a natural number mapped by $\pi$. Thus, if we let $x=0$ and $y=0$ then we see that $a=\frac{1}{2}$. Substituting that back into the expression we find $c=1$. Solving for the rest we find $e=\frac{3}{2}$ and that $d=1-a=\frac{1}{2}$ and of course $f=0$. Thus, we may now add this back into the final equation:
+\[
+{\begin{aligned}\pi (x,y)&={\frac {1}{2}}(x^{2}+y^{2})+xy+{\frac {1}{2}}x+{\frac {3}{2}}y\\&={\frac {1}{2}}(x+y)(x+y+1)+y,\end{aligned}}
+\]
+And thus we have derived the Cantor-Pairing Function.
 
 \end{document}
 
