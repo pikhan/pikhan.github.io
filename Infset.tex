@@ -13,13 +13,15 @@
 \begin{huge}
 Notes on Infinite Sets
 \end{huge}
-\\from Velleman's How to Prove It: A Structured Approach
-\newline by Ibraheem Khan
+\\
+by Ibraheem Khan
 \end{center}
 
 \section{Equinumerous Sets}
 
-\par Suppose A and B are sets. We'll say that A is equinumerous with B if there is a function f: A $\to$ B that is one-to-one and onto, that is, it is a bijection. Let A $\sim$ B denote that A is equinumerous to B. A set A is finite if there exists some n $\in$ $\mathbb{N}$ such that $\{$i $\in \mathbb{Z}^{+}$ $|$ i $\leq$ n$\}$ $\sim$ A. Essentially, if there is some sequence of or some selection of positive integers that are less than n and we collect these numbers into a set and also if this set is equinumerous to our set A, then set A is finite. Otherwise, A is an infinite set. Its cardinality, however, is not to be conflated with this notion of infinity. Finite cardinalities simply refers to the number i in finite sets as it is merely the number of elements in a set. However, in infinite sets cardinalities must be found via investigation of such bijections. Further, it is known that $\sim$ is an equivalence relation as it is reflexive, symmetric, and transitive. Refer to the notes done in class from Book of Proof for other trivialities, (such as finding particular one to one correspondences). 
+\textbf{Definition 1} \textit{Equinumerous Sets} Suppose A and B are sets. We'll say that A is equinumerous with B if there is a function f: A $\to$ B that is one-to-one and onto, that is, it is a bijection. Let A $\sim$ B denote that A is equinumerous to B. A set A is finite if there exists some n $\in$ $\mathbb{N}$ such that $\{$i $\in \mathbb{Z}^{+}$ $|$ i $\leq$ n$\}$ $\sim$ A.
+\\
+\par Essentially, if there is some sequence of or some selection of positive integers that are less than n and we collect these numbers into a set and also if this set is equinumerous to our set A, then set A is finite. Otherwise, A is an infinite set. Its cardinality, however, is not to be conflated with this notion of infinity. Finite cardinalities simply refers to the number i in finite sets as it is merely the number of elements in a set. However, in infinite sets cardinalities must be found via investigation of such bijections. Further, it is known that $\sim$ is an equivalence relation as it is reflexive, symmetric, and transitive. Refer to the notes done in class from Book of Proof for other trivialities, (such as finding particular one to one correspondences). 
 \\
 \par We now expand our notion of countable sets as being denumerable sets- that is sets A $\sim$ $\mathbb{Z}^{+}$ or those that are finite. Uncountable sets will be defined as those that are not countable. Uncountable sets are not necessarily sets whose cardinalities are equivalent to $\mathbb{R}$. 
 \\
@@ -48,7 +50,10 @@ Notes on Infinite Sets
 \begin{flushleft}
 2 $\implies$ 3
 \end{flushleft}
-\par If A is the null set, then the empty set itself is the bijection from A to $\mathbb{Z}^{+}$. To explore the intricacies of this we will explore the various subtleties of empty sets and empty functions. \textbf{Empty sets} are the \textit{unique} sets having no elements with cardinality zero. Many statements regarding sets and other mathematical objects \textit{vacuously} hold true. Empty sets hold the following properties $\forall$ sets $A$:
+\par If A is the null set, then the empty set itself is the bijection from A to $\mathbb{Z}^{+}$. To explore the intricacies of this we will explore the various subtleties of empty sets and empty functions.
+\\
+\\
+\textbf{Definition 2} \textit{Empty Sets} Empty sets are the \textit{unique} sets having no elements with cardinality zero. Many statements regarding sets and other mathematical objects \textit{vacuously} hold true. Empty sets hold the following properties $\forall$ sets $A$:
 \begin{enumerate}
 \item $\varnothing \subseteq A$
 \item $A \subseteq \varnothing \implies A=\varnothing$
@@ -93,7 +98,7 @@ Thus, $z$ is an element of $F$ and since it is an element of $F$ it is an ordere
 \end{flushleft}
 \par We now show that if there is an injection from some set to the positive integers (or natural numbers) then the set is countable- that is, it is denumerable or it is finite. Now, since $I$ is one-to-one $\mathcal{D}$($I$) $\sim \mathcal{C}$($I$). Further, $\mathcal{D}$($I$) $= A$ and $\mathcal{C}$($I$) $\subseteq \mathbb{Z}^{+}$. Thus, since the set of positive integers is countable, a subset of it is countable, and so since the domain of our function has the same cardinality as this subset of the positive integers that is the codomain of our function it too must be countable. And so, our proof of the given theorem is complete.
 {$\blacksquare$}
-\section{Properties of Infinite Sets and Cantor's Theorem}
+\section{Properties of Infinite Sets}
 \par We will now prove that: $A \times B$ and $A \cup B$ are both countable if both $A$ and $B$ are countable. Obviously, if either $A$ or $B$ is uncountable then their Cartesian products and unions are also uncountable. Since $A$ and $B$ are both countable there exists functions $f$:$A \to \mathbb{Z}^{+}$ and $g$:$B \to \mathbb{Z}^{+}$. Now, clearly, if the sets are finite their product is finite but if they are denumerable there is more to be said, that is why we imply the denumerability of our sets as we can then assert that the functions $f$ and $g$ are one-to-one and onto. Thus, to prove that $A \times B$ is countable we simply show that $\mathbb{Z}^{+} \times \mathbb{Z}^{+}$ is denumerable as we can define a function $h$:$A \times B \to \mathbb{Z}^{+} \times \mathbb{Z}^{+}$. We know this function is one-to-one if defined as follows: 
 \[
 h(a,b)=(f(a),g(b))
@@ -214,7 +219,30 @@ Thus the Cantor-Pairing function is invertible and therefore it is a bijection. 
 \bigcup_{n=1}^{\infty} S_{n}=\mathbb{N}
 \]
 \par Considering the union of these sets having infinitely many elements is equivalent to a countable set it would lead us to believe that these sets by themselves should also be countable. As such, this would provide us the much necessary intuition to proceed with the proof that the union of countably many countable sets is indeed countable. Note, that we have countably many infinite choices as well (we procured each ``choice" via a procedural list and as we shall see list if we can sequence objects then the set of those objects is countable. Further one may conceive of this as a choice-tree and labeling nodes on such a graph is a trivial task, this labeling is in effect forming a sequence). One final formality to consider in this intuition is the notion of these sets being disjoint.``After" the process all the sets produced will be disjoint so their intersections will be the null set. However, the property we aim to prove does not require that the countably many sets in question be disjoint.
-\par Consider some family of sets (note a family may be contained in a set but is not a set in and of itself), $\mathcal{F}$ that is countable and that every element is $\mathcal{F}$ is also countable. Then $\cup \mathcal{F}$ is also countable. Suppose $\mathcal{F} = \varnothing$ then clearly
+\par Consider some family of sets (note a family may be contained in a set but is not a set in and of itself), $\mathcal{F}$ that is countable and that every element is $\mathcal{F}$ is also countable. Then $\cup \mathcal{F}$ is also countable. Suppose $\mathcal{F} = \varnothing$ then clearly $\cup \mathcal{F}$ is countable. Now, suppose $\mathcal{F} \not= \varnothing$. First, let us assume, that $\varnothing \not\in \mathcal{F}$. We can posit this as we have considered a \textit{family} of sets as opposed to a set of sets, in which case, $\varnothing$ must be an element of the set. Now, since the elements of $\mathcal{F}$ are countable they can be listed, i.e. indexed by the positive integers. Now, each element in an element of $\mathcal{F}$ can also be indexed by positive integers. Thus, we may write that for a general $A \in \mathcal{F}$
+\[
+A_{i}=\{a_1^i,a_2^i,a_3^i,...\}
+\]
+Thus, we may further state that
+\[
+\bigcup\mathcal{F}=\bigcup_{i=1}^{\infty} A_{i}=\{a_j^i |i,j \in \mathbb{Z}^{+}\}
+\]
+Now, the task is clear. Now we define the function $f$: $\mathbb{Z}^{+} \times \mathbb{Z}^{+} \to \cup \mathcal{F}$ :
+\[
+f(i,j)=a_{j}^{i}
+\]
+\par Obviously, this function is onto as it maps all possible $a_{j}^{i}$. Now, we know $\mathbb{N}\times\mathbb{N}$ is denumerable thus we may form the function composition $f \circ g$ where $g$: $\mathbb{N}\times \mathbb{N} \to \mathbb{N}$ which will preserve surjectivity, thus we have formed a surjective function from the positive integers (the naturals) to $\cup \mathcal{F}$ and so clearly $\cup \mathcal{F}$ is countable. Now, lets suppose $\varnothing \in \mathcal{F}$ (we assumed it wasnt so that we could properly index the sets in the family without worrying about indexing null sets). Then we can define $\mathcal{F'}=F \backslash \{\varnothing\}$. Now obviously this new family's union is countable. But this new family is still equivalent to the original family. Thus the original family's union is countable. 
+\par Note that in this process we formed an infinite sequence and indexed it with positive integers to prove countability. Less interesting may be considering finite sequences. However, as we may show the set of all finite sequences of a countable set is also countable. This, now, is truly an interesting property as it may entail as Velleman points out that the set of grammatical sentences in English is a denumerable set! We will first introduce some formality in defining in what it means to be a finite sequence:
+\\
+\\
+\textbf{Definition 3} \textit{Finite Sequence}: A finite sequence of elements of some set $A$ is a function $f$: $\{i \in \mathbb{N} | i \leq n \in \mathbb{N}\} \to A$ such that $n$ is the length of the sequence and for each $i$, $f(i)=a_i=$ the i\textsuperscript{th} term in the list/sequence.
+\\
+\par We now embark upon a proof of this property. We will proceed by method of induction.
+\\
+\\
+\textit{Base Case} We will first consider the initial case when we have a null length, that is $n=0$. Then clearly $\{i \in \mathbb{N} | i \leq n \in \mathbb{N}\}=\varnothing$. Then, $f$ is clearly a unique empty function. 
+\section{Cantor's Theorem}
+Just another section
 \section{The Cantor-Schr\"oder-Bernstein Theorem}
 Stuff will go here about that...
 \section{Appendix-Deriving the Cantor Pairing Function}
@@ -262,6 +290,14 @@ Following much algebra we find
 {\begin{aligned}\pi (x,y)&={\frac {1}{2}}(x^{2}+y^{2})+xy+{\frac {1}{2}}x+{\frac {3}{2}}y\\&={\frac {1}{2}}(x+y)(x+y+1)+y,\end{aligned}}
 \]
 And thus we have derived the Cantor-Pairing Function.
-
+\\
+\begin{center}
+Material sourced from:
+\end{center}
+Velleman's How to Prove It: A Structured Approach
+\\
+Aigner and Ziegler's Proofs from THE BOOK
+\\
+Special Thanks to Math.StackExchange and Wikipedia
 \end{document}
 
