@@ -235,14 +235,30 @@ f(i,j)=a_{j}^{i}
 \par Note that in this process we formed an infinite sequence and indexed it with positive integers to prove countability. Less interesting may be considering finite sequences. However, as we may show the set of all finite sequences of a countable set is also countable. This, now, is truly an interesting property as it may entail as Velleman points out that the set of grammatical sentences in English is a denumerable set! We will first introduce some formality in defining in what it means to be a finite sequence:
 \\
 \\
-\textbf{Definition 3} \textit{Finite Sequence}: A finite sequence of elements of some set $A$ is a function $f$: $\{i \in \mathbb{N} | i \leq n \in \mathbb{N}\} \to A$ such that $n$ is the length of the sequence and for each $i$, $f(i)=a_i=$ the i\textsuperscript{th} term in the list/sequence.
-\\
-\par We now embark upon a proof of this property. We will proceed by method of induction.
+\textbf{Definition 3} \textit{Finite Sequence}: A finite sequence of elements of some set $A$ is a function $f$: $\{i \in \mathbb{N} | i \leq n \in \mathbb{N}\} \to A$ such that $n$ is the length of the sequence and for each $i$, $f(i)=a_i=$ the i\textsuperscript{th} term in the list/sequence. Further, we may denote that for each $n \in \mathbb{N}$, $S_{n}$ is the set of all sequences of some set $A$ with length $n$. 
 \\
 \\
-\textit{Base Case} We will first consider the initial case when we have a null length, that is $n=0$. Then clearly $\{i \in \mathbb{N} | i \leq n \in \mathbb{N}\}=\varnothing$. Then, $f$ is clearly a unique empty function. 
+(NOTE: Prior to this area this natural numbers have been equivalent to the positive integers, we will now, inconsistenly albeit, let 0 be an element of the natural numbers for purposes of convention). 
+\\
+\par We now embark upon a proof of this property. We will proceed by method of induction by first showing that every $S_n$ is countable, then by the previous property we may show that $\cup_{n=0}^{\infty} S_{n}$ is also countable. 
+\\
+\\
+\textit{Base Case} We will first consider the initial case when we have a null length, that is $n=0$. Then clearly $\{i \in \mathbb{N} | i \leq n \in \mathbb{N}\}=\varnothing$. Then, $f$ is clearly a unique empty function. Then, $S_{0}=\{\varnothing\}$ which is clearly countable. 
+\\
+\\
+\textit{Induction Step} Our inductive hypothesis shall be that given some $n \in \mathbb{N}$, $S_{n}$ is countable. We now must show that $S_{n+1}$ is countable. Consider the function $F: S_n \times A \to S_{n+1}$ defined below:
+\[
+F(f,a)=f \cup \{(n+1,a)\}
+\]
+In short, for any finite sequence, $f \in S_{n}$ and any element $a \in A$, $F(f,a)$ is the finite sequence $f$ with $a$ as the $(n+1)$-th element. This function is one-to-one as $f$ is clearly injective and the $(n+1)$-th element, $a$, is not mapped by $f$. This function is surjective as it will map all possible length $n+1$ finite sequences. Thus, $F$ is a bijection. This implies $S_{n} \times A \sim S_{n+1}$. Both $S_{n}$ and $A$ are countable. Thus, their product is countable. But $F$ is a bijection. Therefore, $S_{n+1}$ is countable. Thus, we have completed the inductive proof that all $S_{n}$ are countable. By the previous theorem, their union is also countable. And so the proof is complete.
 \section{Cantor's Theorem}
-Just another section
+\par Cantor's Theorem states that the power set of the positive integers, that is $\mathcal{P}(\mathbb{Z}^{+})$ is uncountable. A stronger version of this theorem is that for any set $A$ its power set has a different cardinality than $A$. The original version of the states that given some set $A$, $|\mathcal{P}(A)|$ is strictly greater than $A$ regardless of the cardinality (even if it is countable/uncountable) of $A$. We will now prove this theorem.
+\\
+\\
+\textbf{Theorem 3} \textit{Cantor's Theorem} Let $f$ be a map from a set $A$ to its power set $\mathcal{P}(A)$. Then $f$: $A \to \mathcal{P}(A)$ is not surjective. Thus, $|\mathcal{P}(A)| > |A|$ for any set A. 
+\\
+\\
+\textit{Proof} Consider the subset of $A$ $B=\{x \in A | x \not \in f(x)\}$. This is often called the cantor diagonal set. Now, will $f$ ever map $B$ which is a subset of $A$ and thus a member of $\mathcal{P}(A)$? No, by definition it never will. Suppose it did, then for some $f(\zeta)=B$ it would imply that this $\zeta \in B$ because $\zeta \not \in f(\zeta)$ as $f(\zeta)=B$ but since $\zeta \in B$ $f(\zeta) \not = B$. This is a contradiction, thus $f$ is not surjective. All that there is left to prove is that there is an injective map from $A$ to $\mathcal{P}(A)$ which there is: $x \to \{x\}$. $\blacksquare$
 \section{The Cantor-Schr\"oder-Bernstein Theorem}
 Stuff will go here about that...
 \section{Appendix-Deriving the Cantor Pairing Function}

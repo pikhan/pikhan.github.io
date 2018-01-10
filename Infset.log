@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.14)  8 JAN 2018 21:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.12.14)  9 JAN 2018 21:48
 entering extended mode
 **./Infset.tex
 (Infset.tex
@@ -264,21 +264,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--111
  []
 
 [4] [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 235--240
+Underfull \hbox (badness 10000) in paragraph at lines 235--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--240
+Underfull \hbox (badness 10000) in paragraph at lines 235--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--244
+Underfull \hbox (badness 10000) in paragraph at lines 235--243
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--250
 
  []
 
 [8]
+Underfull \hbox (badness 10000) in paragraph at lines 255--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--262
+
+ []
+
 <c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/CantorP
 F.png, id=41, 430.60875pt x 426.59375pt>
 File: c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/Ca
@@ -286,33 +305,34 @@ ntorPF.png Graphic file (type png)
 <use c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/Can
 torPF.png>
 Package pdftex.def Info: c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.
-github.io/images/CantorPF.png  used on input line 251. on input line 251.
+github.io/images/CantorPF.png  used on input line 267. on input line 267.
 Package pdftex.def Info: Requested size: 113.81102pt x 112.74738pt on input lin
-e 251.
+e 267.
+[9]
 <c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/Countin
-gRationals.png, id=43, 430.60875pt x 426.59375pt>
+gRationals.png, id=46, 430.60875pt x 426.59375pt>
 File: c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/Co
 untingRationals.png Graphic file (type png)
 <use c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/Cou
 ntingRationals.png>
 Package pdftex.def Info: c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.
-github.io/images/CountingRationals.png  used on input line 256. on input line 2
-56.
+github.io/images/CountingRationals.png  used on input line 272. on input line 2
+72.
 Package pdftex.def Info: Requested size: 113.81102pt x 112.74738pt on input lin
-e 256.
- [9 <c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/Can
-torPF.png> <c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/ima
-ges/CountingRationals.png>]
-Overfull \hbox (33.56758pt too wide) detected at line 283
+e 272.
+ [10 <c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/Ca
+ntorPF.png> <c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/im
+ages/CountingRationals.png>]
+Overfull \hbox (33.56758pt too wide) detected at line 299
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--294
+Underfull \hbox (badness 10000) in paragraph at lines 307--310
 
  []
 
-[10] (Infset.aux) ) 
+[11] (Infset.aux) ) 
 Here is how much of TeX's memory you used:
  2353 strings out of 493312
  31734 string characters out of 3138874
@@ -334,9 +354,9 @@ m/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Infset.pdf (10 pages, 218469 bytes).
+Output written on Infset.pdf (11 pages, 223462 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
