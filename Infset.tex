@@ -259,6 +259,8 @@ In short, for any finite sequence, $f \in S_{n}$ and any element $a \in A$, $F(f
 \\
 \\
 \textit{Proof} Consider the subset of $A$ $B=\{x \in A | x \not \in f(x)\}$. This is often called the cantor diagonal set. Now, will $f$ ever map $B$ which is a subset of $A$ and thus a member of $\mathcal{P}(A)$? No, by definition it never will. Suppose it did, then for some $f(\zeta)=B$ it would imply that this $\zeta \in B$ because $\zeta \not \in f(\zeta)$ as $f(\zeta)=B$ but since $\zeta \in B$ $f(\zeta) \not = B$. This is a contradiction, thus $f$ is not surjective. All that there is left to prove is that there is an injective map from $A$ to $\mathcal{P}(A)$ which there is: $x \to \{x\}$. $\blacksquare$
+\\
+\par Now by application of this theorem it is easy to see that the power set of the positive integers is larger the positive integers and so we have constructed an uncountable set. By forming an injection with the reals to the power set of the positive integers we can prove that the reals are uncountable as well as were they to be countable then there would be a bijection from the reals to the positive integers. Now were we to compose our injection with this bijection we would an injection from $\mathcal{P}(\mathbb{Z})^{+} \to \mathbb{Z}^{+}$ which would contradict Cantor's theorem. Thus, all we have to show is that there is an injection from the power set of the positive integers to the reals.  
 \section{The Cantor-Schr\"oder-Bernstein Theorem}
 Stuff will go here about that...
 \section{Appendix-Deriving the Cantor Pairing Function}
