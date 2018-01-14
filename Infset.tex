@@ -14,6 +14,8 @@
 Notes on Infinite Sets
 \end{huge}
 \\
+From Velleman's How to Prove It, MSE, and Wikipedia
+\\
 by Ibraheem Khan
 \end{center}
 
@@ -260,7 +262,14 @@ In short, for any finite sequence, $f \in S_{n}$ and any element $a \in A$, $F(f
 \\
 \textit{Proof} Consider the subset of $A$ $B=\{x \in A | x \not \in f(x)\}$. This is often called the cantor diagonal set. Now, will $f$ ever map $B$ which is a subset of $A$ and thus a member of $\mathcal{P}(A)$? No, by definition it never will. Suppose it did, then for some $f(\zeta)=B$ it would imply that this $\zeta \in B$ because $\zeta \not \in f(\zeta)$ as $f(\zeta)=B$ but since $\zeta \in B$ $f(\zeta) \not = B$. This is a contradiction, thus $f$ is not surjective. All that there is left to prove is that there is an injective map from $A$ to $\mathcal{P}(A)$ which there is: $x \to \{x\}$. $\blacksquare$
 \\
-\par Now by application of this theorem it is easy to see that the power set of the positive integers is larger the positive integers and so we have constructed an uncountable set. By forming an injection with the reals to the power set of the positive integers we can prove that the reals are uncountable as well as were they to be countable then there would be a bijection from the reals to the positive integers. Now were we to compose our injection with this bijection we would an injection from $\mathcal{P}(\mathbb{Z})^{+} \to \mathbb{Z}^{+}$ which would contradict Cantor's theorem. Thus, all we have to show is that there is an injection from the power set of the positive integers to the reals.  
+\par Now by application of this theorem it is easy to see that the power set of the positive integers is larger the positive integers and so we have constructed an uncountable set. By forming an injection with the reals to the power set of the positive integers we can prove that the reals are uncountable as well as were they to be countable then there would be a bijection from the reals to the positive integers. Now were we to compose our injection with this bijection we would an injection from $\mathcal{P}(\mathbb{Z})^{+} \to \mathbb{Z}^{+}$ which would contradict Cantor's theorem. Thus, all we have to show is that there is an injection from the power set of the positive integers to the reals. This is actually quite simple. Let $A \in \mathcal{P}(A)$ then $f(A)=d_{n}$ where
+\[
+d_{n}= \begin{cases}
+3 & \text{if } n \not \in A \\
+7 & \text{if } n \in A \\
+\end{cases}
+\]
+ 
 \section{The Cantor-Schr\"oder-Bernstein Theorem}
 Stuff will go here about that...
 \section{Appendix-Deriving the Cantor Pairing Function}
@@ -308,14 +317,5 @@ Following much algebra we find
 {\begin{aligned}\pi (x,y)&={\frac {1}{2}}(x^{2}+y^{2})+xy+{\frac {1}{2}}x+{\frac {3}{2}}y\\&={\frac {1}{2}}(x+y)(x+y+1)+y,\end{aligned}}
 \]
 And thus we have derived the Cantor-Pairing Function.
-\\
-\begin{center}
-Material sourced from:
-\end{center}
-Velleman's How to Prove It: A Structured Approach
-\\
-Aigner and Ziegler's Proofs from THE BOOK
-\\
-Special Thanks to Math.StackExchange and Wikipedia
 \end{document}
 
