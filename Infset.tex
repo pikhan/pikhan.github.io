@@ -6,7 +6,15 @@
 \usepackage{indentfirst}
 \usepackage{graphicx}
 \graphicspath{ {c:/Users/Polymathykhan/Documents/GitHub/polymathykhan.github.io/images/} }
-
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+ 
+\urlstyle{same}
 \begin{document}
 \setlength\parindent{24pt}
 \begin{center}
@@ -14,7 +22,7 @@
 Notes on Infinite Sets
 \end{huge}
 \\
-From Velleman's How to Prove It, MSE, and Wikipedia
+From How to Prove It, Proofs from THE BOOK, MSE, and Wikipedia
 \\
 by Ibraheem Khan
 \end{center}
@@ -79,7 +87,7 @@ by Ibraheem Khan
 \[
 (x,y) = \{\{x\}, \{x,y\}\}
 \]
-Thus, $z$ is an element of $F$ and since it is an element of $F$ it is an ordered pair. Now, for all such $z$, if $z$ is an element of $F$, then it is implied that there exists some $x$ and $y$ such that the definition of an ordered pair is satisfied for $z$. The second subcondition states that for all $x$ there must exist $z$ and $y$ such that the ordered pair is formed. In effect, the condition essentially states that we have a function composed of elements $z$, that $z$ is defined as such, and that we have fixed our elements $x$, or really our left-coordinate.
+Note, this definition then avoids the problem of ordering the numbers in the pair. Thus, $z$ is an element of $F$ and since it is an element of $F$ it is an ordered pair. Now, for all such $z$, if $z$ is an element of $F$, then it is implied that there exists some $x$ and $y$ such that the definition of an ordered pair is satisfied for $z$. The second subcondition states that for all $x$ there must exist $z$ and $y$ such that the ordered pair is formed. In effect, the condition essentially states that we have a function composed of elements $z$, that $z$ is defined as such, and that we have fixed our elements $x$, or really our left-coordinate.
 \par The implication then leads us to show that given this information, for every right-coordinate $x$, there will only be \textit{one} such corresponding $y$ or right-coordinate in the only possible ordered pair for that $x$. That is, if we have two right-coordinates $u$ and $v$ and we have ordered pairs $(x,u)$ and $(x,v)$ then $u=v$. This agree with out intuitive definition of a function in that if we some $\mathbf{X}$ $\in$ $\mathcal{D}$($F$) then there is a unique $\mathbf{Y}$ $\in$ $\mathcal{C}$($F$) such that $\mathbf{X}$$F$$\mathbf{Y}$ or really that ($\mathbf{X}$,$\mathbf{Y}$) $\in F$. Now, the empty function is a function much in the same way that the empty set is a set of real numbers or elephants. The set contains no elements so it may vacuously hold true for any restriction including the definition of functions as 
 \begin{itemize}
 \item The empty set is a collection of ordered pairs
@@ -276,19 +284,50 @@ d_{n}= \begin{cases}
 [a_n\hat{i}+a_{n-1}\hat{j}+...a_0\hat{z}]\bullet[x^n\hat{i}+x^n-1\hat{j}+...x^0\hat{z}]
 \]
 \item Consider the vector of coefficients. We may order all polynomials as follows. (In this case we will consider integer coefficients as all real algebraic numbers can be easily reduced to the integers. There is a similar argument for complex coefficients). 
-\[
-\text{1. } 1 \text{\\}
-\text{1. } 2 \text{\\}
-\text{1. } ... \text{\\}
-\text{1. } x \text{\\}
-\text{1. } 2x \text{\\}
-\text{1. } ... \text{\\}
-\text{1. }  \text{\\}
-\]
+\begin{center}
+$1, 2 ,3 ...$\\
+$x+1, x+2,x+3,...$\\
+$2x+1, 2x+2, 2x+3,...$\\
+$...$\\
+$x^2+1, x^2+2, x^2+3,...$\\
+$...$\\
+\end{center}
+\item With the polynomials ordered we use the Fundamental Theorem of Algebra which states that there are a finite number of roots of a polynomial. We can then label those roots in a finite sequence.
+\item We then use the fact that union of countably many countable sets is countable as all possible roots of all possible integer (which is equivalent to algebraic coefficients) polynomials are put in nested countable sets (as they are all sequenced and ordered). 
+\item Thus, all the algebraic numbers are countable.
+\item Therefore, transcendental numbers must exist. $\blacksquare$
 \end{enumerate}
- 
+\par Cantor forms a similar ordering using his notion of polynomial ``height" which is defined as $n-1+|a_0|+|a_1|+...|a_n|$. He orders the polynomials with height and their roots numerically (as they are finite). In his first article he also proves that the real numbers are not countable via use of limits to show that there exists no possible sequence by which one could list the real numbers. It bears no relevance to Cantor's theorem and so will be excluded from this summary paper but it is interesting to note that it is a constructive proof in that a computer program may be written from it to generate transcendental numbers (as the algebraic numbers may be put into a sequence as they are countable). 
 \section{The Cantor-Schr\"oder-Bernstein Theorem}
-Stuff will go here about that...
+\par In the theory of integers, by the well-ordering-principle, which is equivalent to the axiom of choice amongst many other things (induction comes to mind or the law of excluded middle), it is known that if $A \leq B$ and $B \leq A$ then $A=B$. Does there exist a similar extension for equinumerality- or equal cardinality? That is, does there exist a statement that if $A \lesssim B$ and $B \lesssim A$ then $|A|=|B|$ no matter the cardinality of the sets involved? It turns out that such a statement can be proven to be true. Thus, we now begin the process of taking our intuitive notions from the theory of integers (this is a non-constructive proof, as far as I am aware Myhill's theorem is the closest constructive version of this theorem).
+\par In comparisons of cardinality it is often necessary to employ the use of functions. In our case, to say $A \lesssim B$ or vice versa it is equivalent to say that there exists an injective function $f$: $A \to B$ and vice versa. Thus, our original question can be restated that if there exist to injections $f$ and $g$ from $A$ to $B$ and the reverse respectively, can we show that there exists a bijection from $A$ to $B$? 
+\\
+\\
+\textbf{Theorem 4} \textit{Cantor-Schr\"oder-Bernstein Theorem} Suppose $A \lesssim B$ and $B \lesssim A$. Thus, there exits $f$: $A \to B$ and $g$: $B \to A$ both of which are injective. Then, $|A|=|B|$, that is $A \sim B$ as there exists a bijection $h$: $A \to B$.  
+\\
+\\
+\textit{Proof} All that is necessary to complete the proof is to construct or show existence of (the author is not attempting to present a constructive proof, see more on constructivism here: \href{https://polymathykhan.github.io/On_Constructivism.pdf}{On Constructivism}) a function $h$: $A \to B$ that is bijective as this will be equivalent to proving the equinumerality of sets $A$ and $B$. Obviously, if $f$ is onto, then we may let $h=f$, similarly if $g$ is onto we let $h=g^{-1}$. We now consider the case where neither $f$ nor $g$ is onto. 
+\par The proof will try to make this ``what-if" situation into reality by means of construction. In short, it break up the original sets into ``idealized" forms of them where bijections may arise and then show that such subsets do indeed exist. Now, to continue, let us say that $A = X \cup Y$ and that $B = W \cup Z$. We define $W$ to be the image of set (subset of $A$), $X$, under $f$, that is $W=f(X)$. Similarly, we define $Y=g(Z)$. Recall that the definition of an image is $f(X)=\{f(x)|x \in X\}$. With this construction we simply have to define
+\[
+h=\begin{cases}
+	f(a) & \text{if } a \in X \\
+	g^{-1}(a) & \text{if } a \in Y
+\end{cases}
+\] 
+\par Now we must show that the sets $X$, $Y$, $W$, and $Z$ do indeed exist. First notice that all elements of $Y$, by definition, must be in the \textit{range} of $g$. So any element of $A$ that is not in $Ran(g)$ must be in $X$. Thus, if we let $A_1=A \backslash Ran(g)$, then $A_1 \subseteq X$. Now, it is not necessarily true that $A_1=X$ as there may be elements of $X$ that are also elements of $Ran(g)$. Now, note that for all $a \in A_{1}$, $a \in X$ and thus $f(a) \in W \forall a$. Further note that since $g$ is one-to-one $g(f(a)) \not = g(z) \forall a,z \in Z$. Thus, since $g(Z)=Y$ and since $g(f(a)) not \in g(Z)$, $g(f(a)) \in X$. And so, we may let $A_2=g(f(A_1))$. Essentially, we are bouncing back and forth between $A$ and $B$ using our two functions to procure more and more elements of $X$. By recursion, we may state that:
+\[
+X=\bigcup_{n \in \mathbb{Z}^{+}} A_n
+\]
+Since $Y$ is all elements of $A$ that are not in $X$ we have defined $Y$ by defining $X$. Similarly, we have already defined $W$ as the image of $X$ under $f$ and $Z$ as the image of $Y$ under $g^{-1}$. Thus we have sufficiently defined $h$. All that is left is to show that $h$ is a bijection. 
+\begin{enumerate}
+\item \textit{Proof of Injectivity}
+\\
+We proceed with proof by contradiction. Suppose $a_1, a_2 \in A$ where $a_1 \not = a_2$ and that $h(a_1)=h(a_2)$. Thus, we must show that no such $a_1, a_2$ exist. We have three cases to consider: the case when one is in $X$ and the other in $Y$, when they are both in $X$, and when they are both in $Y$. 
+	\begin{enumerate}
+	\item Suppose $a_1 \in X$ and $a_2 \in Y$. Then, by definition of $h$, $h(a_1)=f(a_1)\in W$. Further, $h(a_2)=g^{-1}(a_2)\in Z$. The elements of $W$ and $Z$ are clearly disjoint. 
+	\end{enumerate}
+\item \textit{Proof of Surjectivity}
+\end{enumerate}
 \section{Appendix-Deriving the Cantor Pairing Function}
 \par Pairing functions are any bijective function that maps (computably so) $\mathbb{N} \times \mathbb{N}$ to $\mathbb{N}$. We will now proceed to derive this function from the familiar diagonal argument: 
 \begin{figure}[h]
