@@ -269,6 +269,23 @@ d_{n}= \begin{cases}
 7 & \text{if } n \in A \\
 \end{cases}
 \]
+\par We now proceed to show some interesting results from this basic idea. In Cantor's first article he creates a proof showing the existence of transcendental numbers- that is numbers that are not algebraic and hence unable to be the solution of a polynomial with integer coefficients. Cantor proves this by showing that the set of real algebraic numbers is countable. However, this is clearly a subset of the real numbers. Thus, there must exist non-algebraic, and hence, transcendental numbers in the reals. Cantor's original proof is of a constructive flavor where by he forms "heights" of polynomials to order them into a sequence (this flavor may be brought out due to Kronecker's editorial hegemony). I present a sketch of an alternate proof here:
+\begin{enumerate}
+\item We may consider all polynomials as being the dot product of two vectors:
+\[
+[a_n\hat{i}+a_{n-1}\hat{j}+...a_0\hat{z}]\bullet[x^n\hat{i}+x^n-1\hat{j}+...x^0\hat{z}]
+\]
+\item Consider the vector of coefficients. We may order all polynomials as follows. (In this case we will consider integer coefficients as all real algebraic numbers can be easily reduced to the integers. There is a similar argument for complex coefficients). 
+\[
+\text{1. } 1 \text{\\}
+\text{1. } 2 \text{\\}
+\text{1. } ... \text{\\}
+\text{1. } x \text{\\}
+\text{1. } 2x \text{\\}
+\text{1. } ... \text{\\}
+\text{1. }  \text{\\}
+\]
+\end{enumerate}
  
 \section{The Cantor-Schr\"oder-Bernstein Theorem}
 Stuff will go here about that...
