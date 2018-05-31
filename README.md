@@ -1,2 +1,2 @@
 # pikhan.github.io
-Just all the files for this website
+Hi, welcome to my website. This repository just contains the files for the site. 
