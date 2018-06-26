@@ -1,29 +1,100 @@
-.sidenav{
+body, html {
+    height: 200%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top:0;
+    margin-bottom:0;
+}
+html{width: 100%;}
 
+.large-header {
+   position: relative;
+   width: 100%;
+   background: #111;
+   overflow: hidden;
+   background-size: cover;
+   background-position: center center;
+   z-index: 1;
+}
+
+.demo .large-header {
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+   position: absolute;
+   margin: 0;
+   padding: 0;
+   color: #F9F1E9;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+   text-transform: uppercase;
+   font-size: 4.2em;
+   letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+   font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+   .demo .main-title {
+      font-size: 3em;
+   }
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://pikhan.github.io/ulam%20spiral%20wolfram%20math%20integrators.png");
+
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+    
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#top{
+  height: 25%;
+  width: 100%;
+}
+
+#middle{
+  height: 12.5%;
+  width: 100%;
+}
+
+#Panel_1{
+      background-image: url("https://pikhan.github.io/Mountains%20FG%20Superfamous.JPG");
+      height: 31.25%;
+      width: 100%;
+      background-attachment: fixed;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
 }
 
 .leftmain{
-  margin-left: -50%;
-  margin-top: 17.5%;
-}
-.profile{
-margin-top:-100%;
-opacity: 0;
-  -moz-animation: fadein 3s ease-in 1s forwards; /* Firefox */
-  -webkit-animation: fadein 3s ease-in 1s forwards; /* Safari and Chrome */
-  -o-animation: fadein 3s ease-in 1s forwards; /* Opera */
-  animation: fadein 3s ease-in 1s forwards;
-}
-#intro{
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
-  line-height: 18px;
-  opacity: 0;
-    -moz-animation: fadein 3s ease-in 3s forwards; /* Firefox */
-    -webkit-animation: fadein 3s ease-in 3s forwards; /* Safari and Chrome */
-    -o-animation: fadein 3s ease-in 3s forwards; /* Opera */
-    animation: fadein 3s ease-in 3s forwards;
+  float: left;
+  margin-left: 12.5%;
+  margin-top: 12.5%;
 }
 
 @keyframes fadein {
@@ -55,19 +126,14 @@ opacity: 0;
     to   { opacity: 1; }
 }
 
-.rightmain{
-  text-align: center;
-  margin-left:40%;
-}
 .wrap {
-    margin-top: 150px;
     perspective: 1000px;
     perspective-origin: 50% 50%;
     opacity: 0;
-      -moz-animation: fadein 3s ease-in 5s forwards; /* Firefox */
-      -webkit-animation: fadein 3s ease-in 5s forwards; /* Safari and Chrome */
-      -o-animation: fadein 3s ease-in 5s forwards; /* Opera */
-      animation: fadein 3s ease-in 5s forwards;
+      -moz-animation: fadein 1s ease-in 1s forwards; /* Firefox */
+      -webkit-animation: fadein 1s ease-in 1s forwards; /* Safari and Chrome */
+      -o-animation: fadein 1s ease-in 1s forwards; /* Opera */
+      animation: fadein 1s ease-in 1s forwards;
 }
 
 @keyframes bganim {
@@ -213,7 +279,7 @@ opacity: 0;
 
 
 h1 {
-	font-family: "EB Garamond";
+	font-family: "Times";
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
@@ -252,3 +318,15 @@ pre {
 	font-weight: 400;
 	line-height: 18.5714px;
 }
+
+.rightmain{
+  text-align: center;
+  float: right;
+  margin-top: 12.5%;
+}
+
+#bottom{
+  height: 25%;
+  width: 100%;
+}
+
