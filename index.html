@@ -1,63 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" >
-  
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge", chrome =1>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pikhan.github.io/landingcss.css" />
+    <meta name="description" content="Math and Musings">
+    <meta name="author" content="Ibraheem Khan">
+    <meta name="keywords" content="Ibraheem Khan, mathematics, physics, computer science, university of nevada reno, unr, las vegas, data science">
+    <link rel="shortcut icon" href="https://pikhan.github.io/TeaMug.svg">
 
-<head>
-  <link rel="stylesheet" type="text/css" href=style.css />
-  <title>PiKhan</title>
-</head>
+    <title>Pikhan</title>
 
-<body>
-  <div id="top" class="parallax">
-    <div class="container demo">
-   <div class="content">
-      <div id="large-header" class="large-header">
-         <canvas id="demo-canvas"></canvas>
-         <h1 class="main-title"><span class="thin">Ibraheem</span> Khan</h1>
-      </div>
-   </div>
-</div>
-  </div>
-  <div id= "middle" class="parallax"></div>
-  <div id="Panel_1">
-    <div class="leftmain">
-      <div id="wr" class="wrap">
-       <div id = "cfour" class="cube">
-        <div id="fro" class="front">
-          <a href="https://pikhan.github.io/" id="button1">           <h1>Home</h1> </a>
-        </div>
-      <div id= "bac" class="back">
-        <a href="https://pikhan.github.io/Blog" id="button2"><h1>Blog</h1> </a>
-        </div>
-        <div id="to" class="top">
-          <a href="https://pikhan.github.io/Notes" id="button3"><h1>Notes</h1> </a>
-        </div>
-        <div id= "bott" class="bottom" onclick="Essay()">
-         <a href="https://pikhan.github.io/Essays" id="button4"><h1>Essays</h1> </a>
-        </div>
-        <div id= "lef" class="left">
-          <a href="https://pikhan.github.io/Documents" id="button5"><h1>Documents</h1> </a>
-        </div>
-        <div id= "rig" class="right">
-          <a href="https://pikhan.github.io/Résumé_and_CV" id="button6"><h1>Résumé and CV</h1> </a>
-        </div>
-       </div>
-      </div>
-    </div>
-    <div class="rightmain" onclick="ResetCube()" ondblclick="StopCube()">
-      <div id= "first"><a href="https://pikhan.github.io/Infset.pdf">
-  <img class="profile" src="https://github.com/pikhan/pikhan.github.io/blob/master/piet%20mondrain%20composition%20with%20red,%20yellow,%20blue,%20and%20black.jpg?raw=true" height="20%" width="40%" >
-        <p id="intro"><font size="+2">Infinite Sets</font></p></div>
-       <div id ="third"><a href="https://pikhan.github.io/GEBReview.pdf">
-  <img class="profile" src="https://github.com/pikhan/pikhan.github.io/blob/master/piet%20mondrain%20composition%20with%20red,%20yellow,%20blue,%20and%20black.jpg?raw=true" height="20%" width="40%" >
-  <p id="intro"><font size="+2">Godel Escher Bach</font></p></div>
-   </div>
-  </div>
-  
-<div id= "bottom" class="parallax"></div>
-        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
-</body>
+    
+  </head>
 
+  <body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Ibraheem Khan</h1>
+						<p>Student &nbsp;&bull;&nbsp; Data Scientist &nbsp;&bull;&nbsp; Jack of all Trades, Master of Some</p>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/Ibrahee54520133" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/ibraheem-khan-63a82819a/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://pikhan.github.io/home.html" class="icon brands fa-home"><span class="label">Home</span></a></li>
+								<li><a href="https://github.com/pikhan" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:polymathykhan@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
+					</header>
+
+	
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+
+    
+  </body>
 </html>
